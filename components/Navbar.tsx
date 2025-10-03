@@ -22,12 +22,12 @@ export const Navbar = () => {
         setNav(false);
     }
   return (
-    <div className="z-50 fixed flex justify-center w-full text-white font-bold">
+    <div className="z-50 fixed flex justify-center w-full text-white font-bold rounded-3xl">
 
-        <div className="border border-white/20 mt-8 backdrop-blur-3x1 rounded-3x1 
+        <div className="border border-white/20 mt-8 backdrop-blur-3xl rounded-5xl 
                         hidden md:flex items-center justify-center p-2 max-w-[400px] mx-auto">
 
-            <ul className="flex flex-row p-2 space-x-8">
+            <ul className="flex flex-row p-2 space-x-8 rounded-3xl">
                 {NavLinks.map((link, index) => (
                     <li key={index}>
                         <Link href={link.path} className="transform hover:text-white/50 
